@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nida.mychatapp.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_Suser"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_toEndOf="@+id/linearLayout"
+        android:layout_toRightOf="@+id/linearLayout"
+        android:text="Username"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_Spasswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_Suser"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toEndOf="@+id/linearLayout"
+        android:layout_toRightOf="@+id/linearLayout"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/edit_Sign_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="write your username here :" />
+
+    <EditText
+        android:id="@+id/edit_Sign_passwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/edit_Sign_user"
+        android:layout_alignStart="@id/edit_Sign_user"
+        android:layout_below="@id/edit_Sign_user"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:inputType="textPassword"
+
+        />
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_Sign_passwd"
+        android:layout_alignStart="@+id/edit_Sign_passwd"
+        android:layout_centerVertical="true"
+        android:text="Sign up" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edit_Sign_passwd"
+        android:layout_alignRight="@+id/edit_Sign_passwd"
+        android:layout_centerVertical="true"
+        android:text="Cancel" />
+
+    <TextView
+        android:id="@+id/tv_fillname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_Spasswd"
+        android:layout_alignStart="@+id/tv_Spasswd"
+        android:layout_below="@+id/edit_Sign_passwd"
+        android:layout_marginTop="38dp"
+        android:text="Full Name :" />
+
+    <EditText
+        android:id="@+id/sign_fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_fillname"
+        android:layout_alignBottom="@+id/tv_fillname"
+        android:layout_alignLeft="@+id/edit_Sign_passwd"
+        android:layout_alignStart="@+id/edit_Sign_passwd"
+        android:ems="10"
+        android:inputType="textPersonName"
+         />
+
+
+</RelativeLayout>
